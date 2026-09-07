@@ -1,6 +1,6 @@
 # PSE em Ação — Sistema de Planejamento e Acompanhamento de Ações de Alimentação Saudável
 
-O sistema apoiará a equipe NutriEscola no planejamento, registro e acompanhamento de ações de alimentação saudável realizadas no âmbito do Programa Saúde na Escola, permitindo cadastrar ações, consultar registros e comparar participação prevista x realizada.
+O sistema apoiará a equipe NutriEscola no planejamento, registro e acompanhamento de ações de alimentação saudável realizadas no âmbito do Programa Saúde na Escola, permitindo cadastrar ações, consultar registros e comparar participação prevista e realizada.
 
 
 
