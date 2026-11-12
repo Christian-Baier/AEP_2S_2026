@@ -1,0 +1,24 @@
+Testes 1 a 16 e 20: `testes/entrada_teste.txt` (saída em `testes/saida_teste.txt`). Testes 17 a 19: feitos à parte, com 51 cadastros seguidos, sistema vazio e entrada interrompida.
+
+| # | Caso de teste | Entrada | Resultado esperado | Resultado |
+|---|---------------|---------|--------------------|-----------|
+| 1 | Opção de menu inexistente | `9` | "Opcao invalida. Escolha de 1 a 7." | Passou |
+| 2 | Opção de menu com letras | `abc` | Erro e pede de novo | Passou |
+| 3 | Cadastro válido | A01 + dados corretos | "Acao cadastrada com sucesso." | Passou |
+| 4 | Data inválida | `31/02/abcd` | Erro e pede a data de novo | Passou |
+| 5 | Quantidade negativa | `-5` | Erro e pede de novo | Passou |
+| 6 | Código duplicado | `A01` de novo | "Erro: codigo ja cadastrado." | Passou |
+| 7 | Campo vazio | só espaços | "Erro: este campo nao pode ficar vazio." | Passou |
+| 8 | Listar com ações | opção 2 | Mostra todas as ações | Passou |
+| 9 | Pesquisar por escola | `sol` | Acha 2 ações (sem diferenciar maiúscula) | Passou |
+| 10 | Pesquisar sem resultado | `zzz` | "Nenhuma acao encontrada." | Passou |
+| 11 | Registrar participantes em ação planejada | A01 | Erro, orienta usar a opção 4 | Passou |
+| 12 | Atualizar para realizada | A01, 28 | Situação "realizada", 28 participantes | Passou |
+| 13 | Registrar participantes inválido e depois válido | `-3`, `25` | Erro e depois sucesso | Passou |
+| 14 | Atualizar para cancelada | A03 | Situação "cancelada" | Passou |
+| 15 | Código inexistente | código que não existe | "Erro: acao nao encontrada." | Passou |
+| 16 | Resumo estatístico | opção 6 | 1 planejada, 1 realizada, 1 cancelada, previsto 95, efetivo 25, 26,3% | Passou |
+| 17 | Limite de capacidade | 51 cadastros | 50 aceitos e "Capacidade maxima de acoes atingida." | Passou |
+| 18 | Sistema vazio | opções 2, 3, 6 | "Nenhuma acao cadastrada." | Passou |
+| 19 | Entrada encerrada no meio | fim do arquivo | Programa encerra sem travar | Passou |
+| 20 | Sair | `7` | "NutriEscola encerrado." | Passou |
