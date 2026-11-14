@@ -12,7 +12,6 @@ Com ele você consegue:
 - informar **quantas** pessoas participaram (apenas o número, nunca quem);
 - ver um resumo com os totais e o percentual de participação.
 
-> **Importante:** o NutriEscola **não** é um sistema clínico. Ele não faz consulta, diagnóstico nem prescrição de dieta, e não guarda nome, matrícula ou qualquer dado de saúde de crianças. Use sempre dados fictícios ou coletivos.
 
 ## 2. A quem se destina
 
