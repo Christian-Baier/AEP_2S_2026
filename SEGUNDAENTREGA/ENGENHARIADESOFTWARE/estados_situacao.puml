@@ -1,0 +1,50 @@
+@startuml estados_situacao
+title Diagrama de Estados – Situação de uma ação (campo "situacao")
+
+skinparam shadowing false
+skinparam dpi 150
+skinparam defaultFontName DejaVu Sans
+skinparam nodesep 110
+skinparam ranksep 80
+skinparam ArrowColor #44546A
+skinparam state {
+  BackgroundColor #DDEBF7
+  BorderColor #2F5597
+}
+skinparam note {
+  BackgroundColor #FFF2CC
+  BorderColor #BF9000
+}
+
+state "Planejada" as P
+state "Realizada" as R
+state "Cancelada" as C
+
+[*] --> P : UC01 (cadastro)
+
+P --> R : UC04, opção 2
+P --> C : UC04, opção 3
+
+R --> P : UC04, opção 1
+C --> P : UC04, opção 1
+
+R --> C : UC04, opção 3
+C --> R : UC04, opção 2
+
+note top of P
+  No cadastro, participantes efetivos = 0.
+end note
+
+note bottom of R
+  Ao entrar em "Realizada", o sistema pede os participantes
+  efetivos. Ao sair dela, participantes efetivos voltam a 0.
+  Só neste estado o UC05 (Registrar participantes) funciona,
+  e ele apenas corrige o número (permanece em "Realizada").
+end note
+
+note bottom of C
+  O protótipo permite qualquer transição
+  entre os três estados (sem trava de fluxo).
+end note
+
+@enduml
